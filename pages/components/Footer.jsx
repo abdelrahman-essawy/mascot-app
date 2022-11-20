@@ -35,7 +35,7 @@ function Footer() {
                     </ul>
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8  mx-auto" />
-                <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 max-w-7xl mx-auto">© 2022 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.
+                <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 max-w-7xl mx-auto">© 2022 <Link href="https://my-portfolio-lemon-nine.vercel.app/" className="hover:underline">Abdelrahman Essawy</Link>. All Rights Reserved.
                 </span>
             </div>
 
