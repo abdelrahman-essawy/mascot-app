@@ -5,6 +5,8 @@ import LogoSVG from './LogoSVG';
 function Footer() {
     return (
         <>
+    <hr/>
+
             <div className="p-4 bg-neutral-900 shadow md:px-6 md:py-8">
                 <div className="sm:flex sm:items-center sm:justify-between max-w-7xl mx-auto">
                     <Link href='/' className="flex mb-4 sm:mb-0 space-x-2 flex-shrink-0 items-center sm:justify-self-start sm:mx-0 mx-auto">
