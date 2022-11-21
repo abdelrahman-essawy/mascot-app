@@ -18,10 +18,11 @@ export default function page() {
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center my-2 space-y-2 self-start '>
           <div className='hidden sm:block '>
             <h1 className='text-5xl text-white font-medium leading-tight text-start'>Stay up to date with <span className='text-amber-200 font-bold' ><br /> Financial State</span></h1>
-            <p className='text-xl text-gray-300 font-light tracking-wide my-4 text-start'>Track all cryptocurrencies, gold and Currencies latest prices
+            
+            <p className='text-xl text-gray-300 font-light tracking-wide mt-4 text-start'>Track all cryptocurrencies, gold and Currencies latest prices
               and news.</p>
-            <p className='text-xl text-gray-300 font-light tracking-wide my-4 text-start'>For Investors who seeks detailed and UpToDate informations.</p>
-            <p className='text-xl text-gray-300 font-light tracking-wide my-4 text-start'>For Amateurs who wants to invest their wealth.</p>
+            <p className='text-xl text-gray-300 font-light tracking-wide text-start'>For Investors who seeks detailed and UpToDate informations.</p>
+            <p className='text-xl text-gray-300 font-light tracking-wide mb-4 text-start'>For Amateurs who wants to invest their wealth.</p>
             <div className='w-full flex space-x-4'>
 
               <Link href='/preview' className='text-white text-center px-6 py-2 w-1/2 bg-slate-600 rounded-md font-medium tracking-wide text-lg animate-pulse' >Preview</Link>
