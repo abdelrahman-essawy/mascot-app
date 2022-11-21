@@ -48,14 +48,15 @@ async function HeroPreviewTop3() {
 
     return (
         <section className='px-3 py-4'>
-            <div className='flex justify-evenly items-center text-center space-x-3 my-4'>
+            <div className='flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:justify-evenly items-center text-center space-x-3 my-4'>
                 {
                     currencies.map(({ icon, name, value, symbols }, index) => (
                         <div key={index}>
                             <Image src={icon} width={200} height={200} priority={true} />
                             <h1 className='text-4xl text-white'>{name}</h1>
-                            <p className='text-3xl text-white'>{Math.round((value + Number.EPSILON) * 100) / 100} <span className='text-amber-200 text-xl'>{symbols}</span></p>
+                            <p className='sm:text-3xl text-xl text-white'>{Math.round((value + Number.EPSILON) * 100) / 100} <span className='text-amber-200 text-xl'>{symbols}</span></p>
                         </div>
+                        
                     ))
                 }
             </div>
