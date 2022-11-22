@@ -28,7 +28,7 @@ const currencies = [
 ]
 
 const getData = async (url) => {
-    const response = await fetch(url, { next: { revalidate: 10 } });
+    const response = await fetch(url, { next: { revalidate: 1 } });
     var data = await response.json();
     return data.rates
 }
@@ -43,20 +43,24 @@ const loadValues = () => new Promise(resolve => {
     });
 });
 
+
 async function HeroPreviewTop3() {
     await loadValues();
 
     return (
         <section className='px-3 py-4'>
-            <div className='flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:justify-evenly items-center text-center space-x-3 my-4'>
+            <div className='flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:justify-evenly items-center text-center sm:space-x-3 sm:my-4 mx-auto'>
                 {
                     currencies.map(({ icon, name, value, symbols }, index) => (
                         <div key={index}>
-                            <Image src={icon} width={200} height={200} priority={true} />
+                            <Image src={icon} width={180} height={180} priority={true} className='hidden sm:block' />
+                            <Image src={icon} width={140} height={140} priority={true} className='block sm:hidden' />
                             <h1 className='text-4xl text-white'>{name}</h1>
-                            <p className='sm:text-3xl text-xl text-white'>{Math.round((value + Number.EPSILON) * 100) / 100} <span className='text-amber-200 text-xl'>{symbols}</span></p>
+
+                                <p className='sm:text-3xl text-xl text-white'>{Math.round((value + Number.EPSILON) * 100) / 100} <span className='text-amber-200 text-xl'>{symbols}</span></p>
+
                         </div>
-                        
+
                     ))
                 }
             </div>

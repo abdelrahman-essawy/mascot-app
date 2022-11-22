@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { Suspense } from 'react'
 import Link from 'next/link';
 import HeroPreviewTop3 from './components/HeroPreviewTop3';
+import Loading from './loading';
 
 export default function page() {
   return (
@@ -35,7 +36,10 @@ export default function page() {
         </div>
       </section>
       <hr className="sm:mx-6 border-gray-200  dark:border-gray-600 lg:my-8" />
+      <Suspense fallback={<Loading/>}>
       <HeroPreviewTop3 />
+
+      </Suspense>
     </>
 
   )

@@ -1,6 +1,8 @@
 import '../styles/globals.css'
-import Navbar from "../pages/components/Navbar";
-import Footer from '../pages/components/Footer';
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
+import { Suspense } from 'react';
+import Loading from './loading';
 
 export default function RootLayout({ children }) {
   return (
@@ -11,8 +13,10 @@ export default function RootLayout({ children }) {
           <Navbar />
           <hr />
         </navbar>
-        <main className='flex-grow bg-[#1b322c]'>
-          {children}
+        <main className='flex-grow bg-[#1b322c] relative'>
+          <Suspense fallback={<Loading/>}>
+            {children}
+          </Suspense>
         </main>
         <footer className='mt-auto'>
           <Footer />
