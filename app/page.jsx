@@ -7,7 +7,7 @@ import Loading from './loading';
 export default function page() {
   return (
     <>
-      <section className='px-3 py-4 sm:flex sm:flex-row-reverse sm:justify-evenly w-full sm:max-w-7xl sm:m-auto sm:my-12'>
+      <section className='px-3 py-4 sm:flex sm:flex-row-reverse sm:justify-evenly w-full sm:max-w-7xl sm:m-auto sm:mb-12'>
         <div className='sm:w-1/2'>
           <Image className='mx-auto mb-4 sm:hidden' src={'/hero-image.png'} width={350} height={350} priority={true} />
           <Image className='hidden mx-auto mb-4 sm:block' src={'/hero-image.png'} width={500} height={500} priority={true} />
@@ -19,7 +19,7 @@ export default function page() {
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center my-2 space-y-2 self-start '>
           <div className='hidden sm:block '>
             <h1 className='text-5xl text-white font-medium leading-tight text-start'>Stay up to date with <span className='text-amber-200 font-bold' ><br /> Financial State</span></h1>
-            
+
             <p className='text-xl text-gray-300 font-light tracking-wide mt-4 text-start'>Track all cryptocurrencies, gold and Currencies latest prices
               and news.</p>
             <p className='text-xl text-gray-300 font-light tracking-wide text-start'>For Investors who seeks detailed and UpToDate informations.</p>
@@ -36,10 +36,8 @@ export default function page() {
         </div>
       </section>
       <hr className="sm:mx-6 border-gray-200  dark:border-gray-600 lg:my-8" />
-      <Suspense fallback={<Loading/>}>
-      <HeroPreviewTop3 />
+        <HeroPreviewTop3 />
 
-      </Suspense>
     </>
 
   )
