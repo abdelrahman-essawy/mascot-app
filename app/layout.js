@@ -14,9 +14,7 @@ export default function RootLayout({ children }) {
           <hr />
         </navbar>
         <main className='flex-grow bg-[#1b322c] relative'>
-          <Suspense fallback={<Loading/>}>
             {children}
-          </Suspense>
         </main>
         <footer className='mt-auto'>
           <Footer />
