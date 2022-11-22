@@ -11,14 +11,14 @@ function Login() {
             <LoginSVG className='w-full fill-amber-200 hidden sm:block' />
           </div>
           <div className="md:w-8/12 lg:w-2/5 lg:ml-20">
-            <h2 className='text-5xl tracking-wide font-medium mb-8'>Welcome back, <span className='font-bold text-amber-600'>Investor!</span></h2>
+            <h2 className='text-4xl sm:text-5xl tracking-wide font-medium mb-8'>Welcome back, <span className='font-bold text-amber-600'>Investor!</span></h2>
             {/* Email input */}
             <div className="mb-6">
-              <input type="text" className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none" placeholder="Email address" />
+              <input type="text" className="form-control block w-full px-4 py-2 text-md tracking-wide sm:text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none" placeholder="Email address" />
             </div>
             {/* Password input */}
             <div className="mb-6">
-              <input type="password" className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none" placeholder="Password" />
+              <input type="password" className="form-control block w-full px-4 py-2 text-md tracking-wide sm:text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none" placeholder="Password" />
             </div>
             <div className="flex justify-between items-center mb-6">
               <div className="form-group form-check">
