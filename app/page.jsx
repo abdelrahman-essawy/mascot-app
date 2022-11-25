@@ -36,8 +36,9 @@ export default function page() {
         </div>
       </section>
       <hr className="sm:mx-6 border-gray-200  dark:border-gray-600 lg:my-8" />
+      <Suspense fallback={<Loading />}>
         <HeroPreviewTop3 />
-
+      </Suspense>
     </>
 
   )
