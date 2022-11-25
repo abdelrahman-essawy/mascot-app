@@ -67,7 +67,7 @@ export default function Navbar() {
                                             <Link
                                                 key={index}
                                                 href={page.href}
-                                                className={'focus:bg-teal-900 text-white hover:bg-teal-900 px-3 py-2 rounded-md text-sm font-medium'}
+                                                className={'focus:bg-teal-900 active:bg-teal-800 text-white hover:bg-teal-900 px-3 py-2 rounded-md text-sm font-medium ease-in-out duration-150'}
                                             >
                                                 {page.name}
 
@@ -84,7 +84,7 @@ export default function Navbar() {
                                 {navigation.map((item) => (
                                     <Link href={item.href}
                                         key={item.name}
-                                        className={'focus:bg-teal-900 text-white hover:bg-teal-900 hover:text-hite block px-3 py-2 rounded-md text-base font-medium'}>
+                                        className={'focus:bg-teal-900 active:bg-teal-800 text-white hover:bg-teal-900 hover:text-hite block px-3 py-2 rounded-md text-base font-medium ease-in-out duration-150'}>
 
                                         <Disclosure.Button
                                             aria-current={item.current ? 'page' : undefined}
