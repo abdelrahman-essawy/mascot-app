@@ -23,16 +23,16 @@ export default function page() {
             <p className='text-xl text-gray-300 font-light tracking-wide mt-4 text-start'>Track all cryptocurrencies, gold and Currencies latest prices
               and news.</p>
             <p className='text-xl text-gray-300 font-light tracking-wide text-start'>For Investors who seeks detailed and UpToDate informations.</p>
-            <p className='text-xl text-gray-300 font-light tracking-wide mb-4 text-start'>For Amateurs who wants to invest their wealth.</p>
+            <p className='text-xl text-gray-300 font-light tracking-wide mb-4 text-start'>For Amateurs who wants to invest their savings.</p>
             <div className='w-full flex space-x-4'>
 
-              <Link href='/preview' className='text-white text-center px-6 py-2 w-1/2 bg-slate-600 rounded-md font-medium tracking-wide text-lg animate-pulse' >Preview</Link>
-              <Link href='/login' className='text-white text-center px-6 py-2 w-1/2 bg-teal-700 rounded-md font-medium tracking-wide text-lg' >Login</Link>
+              <Link href='/preview' className='text-white text-center px-6 py-2 w-1/2 bg-slate-600 rounded-md font-medium tracking-wide text-lg animate-pulse  hover:bg-slate-700 active:bg-slate-800 ease-in-out duration-100' >Preview</Link>
+              <Link href='/login' className='text-white text-center px-6 py-2 w-1/2 bg-teal-700 rounded-md font-medium tracking-wide text-lg hover:bg-teal-800 active:bg-teal-900 ease-in-out duration-100' >Login</Link>
             </div>
 
           </div>
-          <Link href='/preview' className='sm:hidden text-white text-center px-6 py-2 w-full bg-slate-600 rounded-md font-medium tracking-wide text-lg animate-pulse' >Preview</Link>
-          <Link href='/login' className='sm:hidden text-white text-center px-6 py-2 w-full bg-teal-700 rounded-md font-medium tracking-wide text-lg' >Login</Link>
+          <Link href='/preview' className='sm:hidden text-white text-center px-6 py-2 w-full bg-slate-600 rounded-md font-medium tracking-wide text-lg animate-pulse hover:bg-slate-700 active:bg-slate-800 ease-in-out duration-100' >Preview</Link>
+          <Link href='/login' className='sm:hidden text-white text-center px-6 py-2 w-full bg-teal-700 rounded-md font-medium tracking-wide text-lg hover:bg-teal-800 active:bg-teal-900 ease-in-out duration-100' >Login</Link>
         </div>
       </section>
       <hr className="sm:mx-6 border-gray-200  dark:border-gray-600 lg:my-8" />
