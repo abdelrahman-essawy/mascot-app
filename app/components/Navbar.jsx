@@ -52,6 +52,7 @@ export default function Navbar() {
                                         )}
                                     </Disclosure.Button>
                                 </div>
+                                
                                 <Link href='/' className="flex space-x-2 flex-shrink-0 items-center sm:justify-self-start sm:mx-0 mx-auto">
                                     <LogoSVG />
                                     <h1 className='font text-2xl' >
@@ -61,6 +62,7 @@ export default function Navbar() {
                                         </span>
                                     </h1>
                                 </Link>
+
                                 <div className="hidden sm:ml-6 sm:block justify-self-center">
                                     <div className="flex space-x-4">
                                         {navigation.map((page, index) => (
@@ -70,12 +72,10 @@ export default function Navbar() {
                                                 className={'focus:bg-teal-900 active:bg-teal-800 text-white hover:bg-teal-900 px-3 py-2 rounded-md text-sm font-medium ease-in-out duration-150'}
                                             >
                                                 {page.name}
-
                                             </Link>
                                         ))}
                                     </div>
                                 </div>
-
                             </div>
                         </div>
 

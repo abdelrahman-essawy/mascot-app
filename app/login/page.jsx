@@ -29,11 +29,11 @@ function Login() {
             </div>
             {/* Email input */}
             <div className="mb-6">
-              <input type="text" className="form-control block w-full px-4 py-2 text-md tracking-wide sm:text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none" placeholder="Email address" />
+              <input type="text" className="form-control block w-full px-4 py-2 sm:text-lg tracking-normal text-sm  text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none" placeholder="Email address" />
             </div>
             {/* Password input */}
             <div className="mb-6">
-              <input type="password" className="form-control block w-full px-4 py-2 text-md tracking-wide sm:text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none" placeholder="Password" />
+              <input type="password" className="form-control block w-full px-4 py-2 sm:text-lg tracking-normal text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none" placeholder="Password" />
             </div>
             <div className="flex justify-between items-center mb-6">
               <div className="form-group form-check">
@@ -43,7 +43,7 @@ function Login() {
               <Link href="#!" className="text-white hover:text-amber-600 focus:text-blue-700 active:text-blue-800 duration-200 transition ease-in-out">Forgot password?</Link>
             </div>
             {/* Submit button */}
-            <Link type="submit" href="#!" className="text-center inline-block px-7 py-3 bg-amber-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-amber-700 hover:shadow-lg active:bg-amber-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-800 active:shadow-lg transition duration-150 ease-in-out w-full" >
+            <Link type="submit" href="#!" className="text-center inline-block px-7 py-3 bg-amber-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-amber-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-800 active:shadow-lg transition duration-150 ease-in-out w-full" >
               Sign in
             </Link>
             <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">

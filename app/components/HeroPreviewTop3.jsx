@@ -44,12 +44,21 @@ const loadValues = () => new Promise(resolve => {
     });
 });
 
-const refreshData = () => {
-    loadValues()
+const test = () => {
+    console.log('assd')
 }
 
+
 async function HeroPreviewTop3() {
-    await loadValues();
+
+    while (currencies[0].value == 0 || currencies[1].value == 0 || currencies[2].value == 0) {
+        await loadValues();
+        console.log(currencies[0].value)
+        console.log(currencies[1].value)
+        console.log(currencies[2].value)
+    }
+
+
 
     return (
         <section className='px-3 py-4'>
@@ -58,7 +67,7 @@ async function HeroPreviewTop3() {
                     currencies.map(({ icon, name, value, symbols }, index) => (
                         <div key={index}>
 
-                            <ClickableImage icon={icon} refreshData={refreshData()} />
+                            <ClickableImage icon={icon} refreshData={test()} />
 
                             {/* <Image src={icon} width={180} height={180} priority={true} className='hidden sm:block' /> */}
                             {/* <Image src={icon} width={140} height={140} priority={true} className='block sm:hidden' /> */}
