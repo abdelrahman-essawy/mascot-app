@@ -45,7 +45,7 @@ const loadValues = () => new Promise(resolve => {
 });
 
 const test = () => {
-    console.log('assd')
+    console.log('test func')
 }
 
 
@@ -53,9 +53,6 @@ async function HeroPreviewTop3() {
 
     while (currencies[0].value == 0 || currencies[1].value == 0 || currencies[2].value == 0) {
         await loadValues();
-        console.log(currencies[0].value)
-        console.log(currencies[1].value)
-        console.log(currencies[2].value)
     }
 
 
