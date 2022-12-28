@@ -81,7 +81,10 @@ function Signup() {
                 type="password"
                 className="form-control block w-full px-4 py-2 sm:text-lg tracking-normal text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none"
                 placeholder="Password"
-                onClick={() => handlePassword(e)}
+                onClick={() => {
+                  setPass(e);
+                  handlePassword(e);
+                }}
               />
             </div>
             {isPasswordValid ? "" : "Password is not valid"}
@@ -90,10 +93,13 @@ function Signup() {
                 type="password"
                 className="form-control block w-full px-4 py-2 sm:text-lg tracking-normal text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none"
                 placeholder="Password Again"
-                onClick={() => handlePassword(e)}
+                onClick={() => {
+                  setPass2(e);
+                  verifyPass2();
+                }}
               />
             </div>
-            {isPasswordValid ? "" : "Password is not valid"}
+            {isPasswordValid2 ? "" : "Password is not valid"}
 
             {/* Submit button */}
             <Link
