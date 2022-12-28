@@ -1,10 +1,10 @@
 import Link from "next/link";
-import React, { setState } from "react";
+import React, { useState } from "react";
 import LoginSVG from "../components/LoginSVG";
 import GmailSVG from "./../components/GmailSVG";
 
 function Signup() {
-  const [isEmailValid, setIsEmailValid] = setState(true);
+  const [isEmailValid, setIsEmailValid] = useState(true);
 
   const handleEmail = () => {
     const regex =
