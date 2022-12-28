@@ -4,12 +4,17 @@ import React, { useState } from "react";
 import LoginSVG from "../components/LoginSVG";
 
 function Signup() {
-  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isEmailValid, setIsEmailValid] = useState(false);
+  const [isPasswordValid, setIsPasswordValid] = useState(false);
 
-  const handleEmail = () => {
+  const handleEmail = ({ value }) => {
     const regex =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    setIsEmailValid(regex.test(String(email).toLowerCase()));
+    setIsEmailValid(regex.test(String(value).toLowerCase()));
+  };
+  const handlePassword = ({ value }) => {
+    const regex = /^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\d)(?=.*[!#$%&? "]).*$/;
+    setIsPasswordValid(regex.test(String(value)));
   };
 
   return (
@@ -69,15 +74,20 @@ function Signup() {
                 type="password"
                 className="form-control block w-full px-4 py-2 sm:text-lg tracking-normal text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none"
                 placeholder="Password"
+                onClick={() => handlePassword(e)}
               />
             </div>
+            {isPasswordValid ? "" : "Password is not valid"}
             <div className="mb-6">
               <input
                 type="password"
                 className="form-control block w-full px-4 py-2 sm:text-lg tracking-normal text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-amber-600 focus:outline-none"
                 placeholder="Password Again"
+                onClick={() => handlePassword(e)}
               />
             </div>
+            {isPasswordValid ? "" : "Password is not valid"}
+
             {/* Submit button */}
             <Link
               type="submit"
