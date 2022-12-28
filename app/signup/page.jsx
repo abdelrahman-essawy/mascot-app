@@ -6,6 +6,10 @@ import LoginSVG from "../components/LoginSVG";
 function Signup() {
   const [isEmailValid, setIsEmailValid] = useState(false);
   const [isPasswordValid, setIsPasswordValid] = useState(false);
+  const [isPasswordValid2, setIsPasswordValid2] = useState(false);
+
+  const [pass, setPass] = useState("");
+  const [pass2, setPass2] = useState("");
 
   const handleEmail = ({ value }) => {
     const regex =
@@ -17,6 +21,9 @@ function Signup() {
     setIsPasswordValid(regex.test(String(value)));
   };
 
+  const verifyPass2 = (pass, pass2) => {
+    pass == pass2 ? setIsPasswordValid2(true) : setIsPasswordValid2(false);
+  };
   return (
     <section className="px-3 py-4 ">
       <div className="sm:max-w-7xl">
